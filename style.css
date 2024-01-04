@@ -1,0 +1,155 @@
+*, body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #202020;
+
+}
+
+hr{
+  margin: 10px 0;
+}
+
+#app, #display{
+  width: 300px;
+  margin: 20px auto 10px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px #0e0e0e;
+  padding: 20px 30px;
+
+}
+
+#app h2{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: orange;
+}
+
+#passwordChars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  width: 100%;
+}
+
+#passwordChars label{
+  font-weight: 500;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+#passwordLengthInput{
+  border: none;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  width: 100px;
+  padding: 3px;
+  font-size: 1.2rem;
+  margin: 0 20px 20px;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  border: 1px solid orange;
+  border-radius: 10px;
+  outline: none;
+}
+
+#passwordLengthInput::-webkit-inner-spin-button,
+#passwordLengthInput::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+
+#generateBtn{
+  background-color: rgb(137, 220, 12);
+  color: white;
+  text-shadow: -1px 1px 0 #000, 
+  1px 1px 0 #000, 
+ 1px -1px 0 #000, 
+-1px -1px 0 #000;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+  border: none;
+  box-shadow: 0 5px 5px #0e0e0e;
+  width: 100%;
+  cursor: pointer;
+}
+
+#generateBtn:hover{
+  background-color: greenyellow;
+}
+
+#generateBtn:active{
+  background-color: green;
+}
+
+#inputAndButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+#display {
+  background-color: orange;
+  box-shadow: 0 5px 5px #0e0e0e;
+
+}
+
+#display p, #displayText {
+  border-radius: 10px;
+  border: none;
+  display: inline-block;
+  color: black;
+  text-align: center;
+  position: relative;
+  text-wrap: wrap;
+  white-space: nowrap; 
+  text-overflow: ellipsis;  
+  width: 100%;
+  padding: 10px 0;
+}
+#displayText{
+  box-shadow: 0 5px 5px #0e0e0e;
+}
+  
+
+#copyBtn{
+  background-color: black;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+  margin: 10px 0;
+  box-shadow: 0 5px 5px #0e0e0e;
+  border: none;
+}
+
+#copyBtn:hover{
+  background-color: #303030;
+}
+
+#copyBtn:active{
+  background-color: green;
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random password generator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="app">
+      <h2>random password generator</h2>
+      <hr>
+      <div id="passwordChars">
+        <label for="upperCaseChars">
+          <p>Upper Case Chars?</p>
+          <input type="checkbox" name="" id="upperCaseChars" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ">
+        </label>
+        <label for="lowerCaseChars">
+          <p>Lower Case Chars?</p>
+          <input type="checkbox" name="" id="lowerCaseChars" value="abcdefghijklmnopqrstuvwxyz">
+        </label>
+        <label for="digitChars">
+          <p>Digit Chars?</p>
+          <input type="checkbox" name="" id="digitChars" value="0123456789">
+        </label>
+        <label for="specialChars">
+          <p>Special Chars?</p>
+          <input type="checkbox" name="" id="specialChars" value="!@#$%^&*()_+-=[]{}|;:,.<>?">
+        </label>
+      </div>
+      <hr>
+      <div id="inputAndButton">
+        <p>password length</p>
+        <input type="number" min="1" max="100" maxlength="2" value="12" id="passwordLengthInput">
+        <button id="generateBtn">Generate!</button>
+      </div>
+    </div>
+    <div id="display">
+      <p>Your Password : </p>
+      <input type="text" name="" id="displayText" readonly>
+      <button id="copyBtn">copy</button>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
